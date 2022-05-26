@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
+        </script>
+        
+        <!-- <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js"></script> -->
+    </head>
+    <body>
+
+        <h1>Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form"></form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+        
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyBZLUhZVOCU8a9itJANJnnGbVlma60F64w",
+              authDomain: "ninja-p-firestore-tut.firebaseapp.com",
+              projectId: "ninja-p-firestore-tut",
+              storageBucket: "ninja-p-firestore-tut.appspot.com",
+              messagingSenderId: "602429099116",
+              appId: "1:602429099116:web:1d7a6579be3b463a029c49",
+              measurementId: "G-DQ1TF78T9F"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = firebase.firestore()
+            db.settings({timestampsInSnapshots: true})
+          </script>
+        <script src="app.js"></script>
+    </body>
+</html>
